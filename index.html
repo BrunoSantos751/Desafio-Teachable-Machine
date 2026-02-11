@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Point up Game controlado por IA</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Import TensorFlow.js and Teachable Machine libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
+</head>
+
+<body>
+    <div id="container">
+        <h1>Point up</h1>
+        <div id="status">Carregando modelo...</div>
+        <p class="instructions">Use seus gestos para controlar o jogo!</p>
+        <div id="game-wrapper">
+            <canvas id="gameCanvas" width="800" height="250"></canvas>
+            <div id="webcam-container"></div>
+        </div>
+        <div id="label-container"></div>
+        <div id="controls-hint">
+            <span>Iniciar: "iniciar"</span> | <span>Pular: "pular"</span>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
